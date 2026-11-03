@@ -51,21 +51,6 @@ slmgr /ato                    activate online
 
 For **Office** (2013 → 2024, both CTR 32/64-bit), the included **Ohook** method replaces nothing: it adds a `sppcs.dll` symlink plus a patched `sppc.dll` beside the real files, so Office's own components keep working, including on Office 16/Build beyond the usual "stuck" dates.
 
-It runs on Windows 10 **and** Windows 11: the edition name comes from `HKLM\...\CurrentVersion` (`ProductName`) with a `CurrentBuildNumber >= 22000` correction, because Windows 11 still reports `Windows 10 ...` there.
-
----
-
-## 🧱 Tech stack
-
-| Module | Role |
-|---|---|
-| `src/main.cpp` | Entry point: admin check → menu |
-| `src/console.*` | All drawing: palette, title, menu lines, `[y/N]` prompts |
-| `src/wininfo.*` | Admin rights, registry edit detection, generic key table |
-| `src/activation.*` | slmgr commands, Windows & Office activation flows |
-| `src/menu.*` | Screen navigation only |
-| `src/ohook.*` | Ohook method for Office (symlink + patched DLL) |
-
 ---
 
 ## 🔨 Build

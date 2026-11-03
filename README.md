@@ -30,12 +30,12 @@
 
 ## 🚀 Quick start
 
-> ⚠️ **Run as Administrator is required** — the tool checks this at startup.
+> ⚠️ **Run as Administrator is required**, the tool checks this at startup.
 
 1. 📥 **[Download the latest release](https://github.com/karpuz358/xer-win-activator/releases/latest)** and run `Xer Activator.exe` (or build it yourself, see below).
 2. Pick **`1 - Activate Windows`** for the detected edition, or **`2 - Select Windows edition`** to pick by hand.
 3. Confirm with `y` and watch the three steps run.
-4. Windows Settings opens automatically at the end — verify the activation status there.
+4. Windows Settings opens automatically at the end, verify the activation status there.
 
 ---
 
@@ -44,12 +44,12 @@
 The tool drives `slmgr.vbs` (the Windows Software Licensing Management Tool) using the generic/retail install keys published by Microsoft for client editions:
 
 ```
-slmgr /ipk  <generic key>     — install the product key
-slmgr /skms <server>          — point the KMS client to a server
-slmgr /ato                    — activate online
+slmgr /ipk  <generic key>     install the product key
+slmgr /skms <server>          point the KMS client to a server
+slmgr /ato                    activate online
 ```
 
-For **Office** (2013 → 2024, both CTR 32/64-bit), the included **Ohook** method replaces nothing: it adds a `sppcs.dll` symlink plus a patched `sppc.dll` beside the real files, so Office's own components keep working — including on Office 16/Build beyond the usual "stuck" dates.
+For **Office** (2013 → 2024, both CTR 32/64-bit), the included **Ohook** method replaces nothing: it adds a `sppcs.dll` symlink plus a patched `sppc.dll` beside the real files, so Office's own components keep working, including on Office 16/Build beyond the usual "stuck" dates.
 
 It runs on Windows 10 **and** Windows 11: the edition name comes from `HKLM\...\CurrentVersion` (`ProductName`) with a `CurrentBuildNumber >= 22000` correction, because Windows 11 still reports `Windows 10 ...` there.
 

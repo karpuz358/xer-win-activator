@@ -13,6 +13,8 @@
 ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white)
 ![MSVC](https://img.shields.io/badge/MSVC-v143-red?style=flat-square&logo=visualstudio&logoColor=white)
 
+<img src="https://i.ibb.co/fYsv6nPP/image.png" alt="Xer Activator" width="800">
+
 *Made with ❤️ by Karpuz*
 
 </div>

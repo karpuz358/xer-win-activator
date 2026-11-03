@@ -1,0 +1,24 @@
+# Build output
+Debug/
+Release/
+x64/
+x86/
+build_test.exe
+*.obj
+*.pdb
+*.ipdb
+*.iobj
+
+# Visual Studio local files
+.vs/
+*.suo
+*.user
+*.opendb
+*.db
+
+# Archives and misc
+*.rar
+*.zip
+
+# Logs
+*.log

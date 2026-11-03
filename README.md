@@ -21,11 +21,10 @@
 
 ## ✨ Features
 
-- 🪟 **Windows activation** in three transparent steps: generic key, KMS server, online activation, each printed as `OK` / `FAILED` in real time
-- 🧠 **Smart edition detection** — reads the registry directly, and correctly identifies Windows 11 (which still reports itself as "Windows 10" in `ProductName`)
-- 📋 **Manual edition picker** for Home / Pro / Education / Enterprise (incl. N, Single Language and Country Specific variants)
-- 🏢 **Office activation** via the Ohook method: no file replaced, only a symlink and a patched DLL added
-- 🖥️ **Clean console UI** — one accent color, thin rules, honest status output, no rainbow ASCII art
+- Activate Windows 10/11 (auto-detects the installed edition)
+- Pick the edition manually if needed
+- Activate Office 2013-2024 with the Ohook method
+- Clean, no-nonsense console interface
 
 ---
 
